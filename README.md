@@ -2,8 +2,9 @@
 Comparing *Behaviour Driven Development* __BDD__ Frameworks
 
 ## Abstract ##
-Look at frameworks supporting the Behaviour Driven Development.
+
 ## Introduction ##
+Behaviour Driven Development opens a new door in application development and in software testing. It make it possible to structure the application test code to some kind of standard and keeps it quite readable. The following research is looking at frameworks supporting the Behaviour Driven Development. 
 
 ## Methods ##
 Criteria
