@@ -16,6 +16,7 @@
 
 	<modules>
 		<module>easyb</module>
+		<module>cucumber</module>
 	</modules>
 
 	<developers>

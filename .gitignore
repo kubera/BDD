@@ -1,2 +1,13 @@
-.settings/
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
 .project
+.classpath
+.settings/
+target/
+.loadpathasspath
