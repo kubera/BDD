@@ -6,10 +6,8 @@
          http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- Beans über Annotationen konfigurieren -->
 	<context:annotation-config />
 
-	<bean id="configBean" class="ch.borobudur.ConfigImpl" />
-	<bean id="reader" class="ch.borobudur.ReadController" />
-	<bean id="writer" class="ch.borobudur.WriteController" />
+	<!-- <bean id="calculator" class="ch.borobudur.banking.Calculator" /> -->
+	
 </beans>
