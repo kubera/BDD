@@ -8,6 +8,5 @@
 
 	<context:component-scan base-package="ch.borobudur.banking" />
 	<context:annotation-config />
-	<!-- <bean id="calculator" class="ch.borobudur.banking.Calculator" /> -->
 	
 </beans>

@@ -1,20 +1,13 @@
 package ch.borobudur.banking;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class Account {
-
-	@Autowired
-	private ICalculator calculator;
 
 	private double balance;
 
+	private ICalculator calculator;
+
 	public Account() {
 		balance = 0;
-	}
-
-	public Account(double balance) {
-		this.balance = balance;
 	}
 
 	public void deposit(double amount) {
@@ -29,4 +22,8 @@ public class Account {
 		return balance;
 	}
 
+	public void setCalculator(ICalculator calculator) {
+		this.calculator = calculator;
+	}
+	
 }

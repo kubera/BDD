@@ -1,4 +1,6 @@
-package ch.borobudur;
+package ch.borobudur.banking;
+
+import javax.inject.Inject;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -7,16 +9,21 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import ch.borobudur.banking.Account;
+import ch.borobudur.banking.AccountManager;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:/META-INF/spring/context.xml")
-public class DITestJavaTest extends Assert {
+public class JavaDependencyInjectionTest extends Assert {
 
+	@Inject
+	private AccountManager accountManager;
+	
     @Test
-    public void diTest() {
-    	Account account = new Account(500);
+    public void injectionTest() {
+    	Account account = accountManager.createAccount();
+    	account.deposit(500.229);
     	account.deposit(500);
-    	assertEquals("balance is 1000", 1000, account.getBalance(), 0.0001);
+    	assertEquals("balance is 1000.23", 1000.23, account.getBalance(), 0.0001);
     }
 
 }

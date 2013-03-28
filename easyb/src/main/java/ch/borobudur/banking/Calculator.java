@@ -2,9 +2,9 @@ package ch.borobudur.banking;
 
 import java.math.BigDecimal;
 
-import org.springframework.stereotype.Component;
+import javax.inject.Named;
 
-@Component
+@Named
 public class Calculator implements ICalculator {
 
 	@Override
