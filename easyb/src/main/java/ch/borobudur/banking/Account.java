@@ -1,10 +1,10 @@
 package ch.borobudur.banking;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Account {
 
-	@Inject
+	@Autowired
 	private ICalculator calculator;
 
 	private double balance;

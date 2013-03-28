@@ -2,19 +2,21 @@ package ch.borobudur.banking;
 
 import java.math.BigDecimal;
 
-import javax.inject.Named;
+import org.springframework.stereotype.Component;
 
-@Named
+@Component
 public class Calculator implements ICalculator {
 
 	@Override
 	public double add(double summand1, double summand2) {
+		System.out.println("Main implementation with " + Calculator.class.getName() + "addition");
 		BigDecimal result = round(summand1 + summand2);
 		return result.doubleValue();
 	}
 
 	@Override
 	public double subtract(double minuend, double subtrahend) {
+		System.out.println("Main implementation with " + Calculator.class.getName() + "subtraction");
 		BigDecimal result = round(minuend - subtrahend);
 		return result.doubleValue();
 	}
