@@ -1,7 +1,7 @@
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import ch.borobudur.banking.Account;
-import ch.borobudur.banking.ICalculator;
+import ch.borobudur.banking.account.Account;
+import ch.borobudur.banking.calculator.ICalculator;
 
 description "ssimple account manipulation"
 

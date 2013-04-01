@@ -1,4 +1,4 @@
-package ch.borobudur.banking;
+package ch.borobudur.banking.calculator;
 
 /**
  * Calculating numbers.

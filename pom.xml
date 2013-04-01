@@ -17,6 +17,9 @@
 	<modules>
 		<module>easyb</module>
 		<module>cucumber</module>
+		<module>account</module>
+		<module>calculator-api</module>
+		<module>calculator-impl</module>
 	</modules>
 
 	<developers>

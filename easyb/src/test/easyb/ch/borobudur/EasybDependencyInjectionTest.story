@@ -4,8 +4,8 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import ch.borobudur.banking.Account;
-import ch.borobudur.banking.AccountManager;
+import ch.borobudur.banking.account.Account;
+import ch.borobudur.banking.account.IAccountManager;
 
 description "simple account manipulation"
 

@@ -1,5 +1,7 @@
 package ch.borobudur.banking;
 
+import ch.borobudur.banking.calculator.ICalculator;
+
 /**
  * Dummy implementation for testing. Replaces the main implementation.
  * 

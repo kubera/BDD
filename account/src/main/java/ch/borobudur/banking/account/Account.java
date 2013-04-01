@@ -1,13 +1,20 @@
-package ch.borobudur.banking;
+package ch.borobudur.banking.account;
 
+import ch.borobudur.banking.calculator.ICalculator;
+
+/**
+ * Account example.
+ * 
+ * @author Stefan Wagner
+ */
 public class Account {
 
-	private double balance;
+	private double balance = 0;
 
 	private ICalculator calculator;
 
-	public Account() {
-		balance = 0;
+	public Account(ICalculator calculator) {
+		this.calculator = calculator;
 	}
 
 	public void deposit(double amount) {
@@ -22,8 +29,4 @@ public class Account {
 		return balance;
 	}
 
-	public void setCalculator(ICalculator calculator) {
-		this.calculator = calculator;
-	}
-	
 }

@@ -1,22 +1,29 @@
-package ch.borobudur.banking;
+package ch.borobudur.banking.calculator.impl;
 
 import java.math.BigDecimal;
 
 import javax.inject.Named;
 
+import ch.borobudur.banking.calculator.ICalculator;
+
+/**
+ * Calculator default implementation. 
+ * 
+ * Rounding calculations half up at scale 2.
+ * 
+ * @author Stefan Wagner
+ */
 @Named
 public class Calculator implements ICalculator {
 
 	@Override
 	public double add(double summand1, double summand2) {
-		System.out.println("Main implementation with " + Calculator.class.getName() + "addition");
 		BigDecimal result = round(summand1 + summand2);
 		return result.doubleValue();
 	}
 
 	@Override
 	public double subtract(double minuend, double subtrahend) {
-		System.out.println("Main implementation with " + Calculator.class.getName() + "subtraction");
 		BigDecimal result = round(minuend - subtrahend);
 		return result.doubleValue();
 	}

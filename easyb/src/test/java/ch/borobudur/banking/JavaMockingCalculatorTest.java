@@ -1,15 +1,18 @@
 package ch.borobudur.banking;
 
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import junit.framework.TestCase;
 
 import org.junit.Before;
 import org.junit.Test;
 
-public class JavaMockingCalculatorTest extends TestCase {
+import ch.borobudur.banking.account.Account;
+import ch.borobudur.banking.calculator.ICalculator;
 
-	private Account account = new Account();
+public class JavaMockingCalculatorTest {
+
+	private Account account;
 
 	private ICalculator mockedCalculator = mock(ICalculator.class);
 
@@ -18,7 +21,7 @@ public class JavaMockingCalculatorTest extends TestCase {
 		when(mockedCalculator.add(0, 500)).thenReturn(Double.valueOf(500));
 		when(mockedCalculator.subtract(500, 200)).thenReturn(Double.valueOf(300));
 
-		account.setCalculator(mockedCalculator);
+		account = new Account(mockedCalculator);
 	}
 
 	@Test
